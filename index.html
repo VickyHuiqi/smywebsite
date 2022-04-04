@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SMY</title>
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js"></script>
+</head>
+
+<header>
+    <div class="logo"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">公演</a></li>
+            <li><a href="">直播</a></li>
+        </ul>
+    </div> 
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <div class="slide first">
+          <img src="https://wx1.sinaimg.cn/mw690/006Z1bEvly1grf72wmcvej337o4zxkjr.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://i.ibb.co/x1N5p7Y/header.jpg" alt="">
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 2){
+          counter = 1;
+        }
+      }, 3000);
+      </script>
+</header>
+<body>
+
+</body>
+
+</html>
